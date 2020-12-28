@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+ <html>
+     <HEAD>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Css/style.css">
+        <lnik rel="stylesheet" href="Webpage.css">
+        <title> W </title>
+
+     </HEAD>
+         <body>
+            <nav>
+              <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn">Explore &#9660;</button>
+                    <div class="dropdown-content">
+                      <a class="active" href="Poems.html">Memories</a>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="About Us.html">About Us</a></li>
+              </ul>
+            </nav>
+         
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script type="text/javascript">
+         
+         
+                  (function() {
+         
+                            var documentElem = $(document),
+                                nav = $('nav'),
+                                lastScrollTop = 0;
+         
+                            documentElem.on('scroll', function() {
+                                var currentScrollTop = $(this).scrollTop();
+         
+                                //scroll down
+                                if ( currentScrollTop > lastScrollTop ) nav.addClass('hidden');
+                                //scroll up
+                                else nav.removeClass('hidden');
+         
+                                lastScrollTop = currentScrollTop;
+                            });
+         
+         
+         
+         
+                        })();
+         
+         
+                </script>
+                <div class="bg-image1"></div>
+
+            <div class= "back"></div>
+            <div class = "bday">
+            Happy Birthday
+            </div>
+                <div class="name">
+                    Breanna
+                </div>
+                    <div class= "wrapper">
+                        <div class = "img-area">
+                             <div class = "single-img img-one">
+                                <img src = "Pictures/AA.jpg" alt ="">
+                                </div>
+                             <div class = "single-img img-two">
+                                 <img src = "Pictures/BBB.jpg" alt ="">
+                                </div>
+                             <div class = "single-img img-three">
+                                 <img src = "Pictures/CCC.jpg" alt ="">
+                                 </div>
+                             <div class = "single-img img-four">
+                                <img src = "Pictures/AA.jpg" alt ="">
+                                </div>
+                             <div class = "single-img img-five">
+                                 <img src = "Pictures/BBB.jpg" alt ="">
+                                 </div>
+                             <div class = "single-img img-six">
+                                 <img src = "Pictures/CCC.jpg" alt ="">
+                                 </div>
+                          </div>
+                  </div>
+         </body>
+ </html>

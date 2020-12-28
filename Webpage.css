@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+body {
+	height: 100%;
+	margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+	background-color: #1D2951;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Navigation Bar*/
+nav {
+    background-color: #000000;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		transition: all 0.5s ease;
+		z-index: 999;
+}
+
+nav.hidden {
+    transform: translate3d(0,-100%,0)
+}
+
+nav ul li{
+		display: inline-block;
+}
+
+nav ul li a, .dropdown .dropbtn{
+		border-radius: 7px;
+    color: #f2f2f2;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.dropdown .dropbtn {
+	background-color: inherit;
+	border: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+	border-radius: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn  {
+    background-color: #ddd;
+    color: black;
+}
+
+nav ul li a.active {
+    background-color: #4463d4;
+    color: white;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #E0E0E0;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9B9E9B;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6D746D;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Background*/
+.bg-image1 {
+	background-image: url('images/Fairytail.jpg');
+	height: 100vh;
+	width: auto;
+	max-width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(6px);
+ 	-webkit-filter: blur(6px);
+}
+
+.bg-text {
+	background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+	font-family: 'Lobster', cursive;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bigspace {
+	height: 2000px;
+}
+
+.space {
+	height: 90px;
+}
+
+.smallspace {
+	height: 30px;
+}
+
+.headings {
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	text-shadow: 0 0 50px black;
+	color: white;
+}
